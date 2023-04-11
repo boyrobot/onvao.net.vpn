@@ -61,4 +61,6 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: silversabres.${{ github.sha }}.ios
-        path: build/ios/iphoneos/Runner.app
+        path: |
+          build/ios/iphoneos/Runner.app
+          build/ios/**/*.ipa
