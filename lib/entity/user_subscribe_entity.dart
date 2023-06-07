@@ -89,7 +89,7 @@ class Plan {
   final int transferEnable;
   final String name;
   final int show;
-  final int sort;
+  final int? sort;
   final int renew;
   final String? content;
   final int? monthPrice;
@@ -114,7 +114,7 @@ class Plan {
     transferEnable: json["transfer_enable"],
     name: json["name"],
     show: json["show"],
-    sort: json["sort"] == null ? 0 : json["sort"],
+    sort: json["sort"],
     renew: json["renew"],
     content: json["content"],
     monthPrice: json["month_price"],
